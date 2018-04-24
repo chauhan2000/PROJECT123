@@ -53,7 +53,18 @@ void insert(int item)
 
 int del()
 {
-    //pratyush will add here
+      struct node *tmp;
+    int item;
+    if( isEmpty( ) )
+    {
+        printf("Queue Underflow\n");
+        exit(1);
+    }
+    tmp=front;
+    item=tmp->info;
+    front=front->link;
+    free(tmp);
+    return item;
 }
 
 
