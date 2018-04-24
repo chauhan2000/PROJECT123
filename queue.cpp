@@ -47,8 +47,28 @@ main()
 
 void insert(int item)
 {
-    //sajal will add here
-	}
+struct node *tmp;
+tmp=(struct node*)malloc(sizeof(structnode));
+if(tmp=null)
+{
+printf("memory not available ");
+return;
+}
+temp-->info=item;
+temp-->link=NULL;
+if(front==NULL)
+{
+front=tmp;
+rear=tmp;
+}
+else
+{
+rear-->link=tmp;
+rear-->front=tmp;
+}
+}
+//added by sajal
+	
 
 
 int del()
